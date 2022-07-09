@@ -1,0 +1,190 @@
+\section*{Radiation}
+$S_0=1360,5\frac{W}{m^2}$\\
+$d\lambda B(\lambda,T)=\frac{2hc^2}{\lambda^5}\frac{1}{e^{\frac{hc}{\lambda k T}}-1}d\lambda$\\
+$\lambda_{max}=\frac{2,898\cdot10^{-3}mK}{T}$\\
+$F=\epsilon\sigma T^4$, $\sigma=5,67\cdot10^{-8}\frac{W}{m^2K^4}$\\
+$\alpha + \rho + \tau = 1$, $\alpha = \epsilon$\\
+Albedo of atmosphere + surface: $A = 30\%$\\
+Global radiation balance:\\ 
+Without atmosphere: $T = \left(\frac{S_0(1-A)}{4\epsilon\sigma}\right)^{\frac{1}{4}}$\\
+With atmosphere:\\
+$\frac{S_0}{4}(1-A)+\epsilon_a\sigma T_a^4=\sigma T_S^4$\\
+$\epsilon_a\sigma T_S^4=2\epsilon_a\sigma T_a^4$\\
+$T_S = \left(\frac{S_0(1-A)}{2\sigma(2-\epsilon_a)}\right)^{\frac{1}{4}}$\\
+$T_A = \left(\frac{S_0(1-A)}{4\sigma(2-\epsilon_a)}\right)^{\frac{1}{4}}$
+\section*{Earths fluids}
+Equation of state - air:\\
+$pV=nRT$, $\rho = \frac{nM}{V}=\frac{pM}{RT}$\\
+Pressure profile - atmosphere:\\
+$p(z)=p_0 e^{-\frac{Mg}{RT}z}=p_0 e^{-\frac{z}{H}}$\\
+Surface pressure: $p_0=1,013\cdot10^{5}Pa$\\
+Surface density: $\rho_S = 1,235\frac{kg}{m^3}$\\
+Kin. Visc.: $\nu=1,34\cdot10^{-5}\frac{m^2}{s}$\\
+$c_p=1005\frac{J}{kgK}$, $c_V=718\frac{J}{kgK}$\\
+Saturation Water Vapour Pressure:\\
+$p_S(T)=p_0exp(-\frac{L}{R}(\frac{1}{T}-\frac{1}{T_0})))$\\
+Magnus Formula:\\
+$e_S=6,11hPa\cdot10^{\frac{7,5\cdot T[C]}{238 + T[C]}}$\\
+Absolute Humidity: $a=\frac{m_V}{V}$\\
+Specific Humidity: $q=\frac{\rho_V}{\rho_{air}}$\\
+Relative Humidity: $f=\frac{e}{e_S}=\frac{\rho_V R_V T}{e_S}$\\
+Pressure Profile - Ocean:\\
+$p(z)=p_0-\rho g z$\\
+Salinity: $S=\frac{\text{Mass of Salt}}{\text{Mass of Solution}}$\\
+Density: $\rho=1\cdot10^3\frac{kg}{m^3}$\\
+Kin. Visc.:$\nu=10^{-6}\frac{m^2}{s}$\\
+Specific Heat: $c_W=4,18\cdot10^3\frac{J}{kgK}$\\
+Equation of state - water:\\
+$\rho(T,S,p)=\rho_0[1-\alpha(T-T_0)+\beta(S-S_0)+\gamma(p-p_0)]$, $\omega=(-1)^{\delta_{\omega,\alpha}}\frac{1}{\rho}\left(\frac{\partial \rho}{\partial A_\omega}\right)_{B,C}$
+\section*{Diffusion and Advection}
+Concentration: $c=\frac{m}{V} or \frac{n}{V} or \frac{N}{V}$\\
+Flux Density: $j_x=\frac{1}{A}\frac{\Delta m_x}{\Delta t}$\\
+Flux: $\Phi=\int\vec{j}d\vec{A}=-\frac{\partial m}{\partial t}$\\
+Advection: $j_ad = \frac{1}{A}\frac{\partial N}{\partial t}=cv_x$, $\vec{j}_{ad}=c\vec{v}$\\
+Diffusion: $\vec{j}_{dif}=-D\vec{\nabla} c$, $D=\frac{1}{3}\bar{v}\lambda$\\
+Mean free path: $\lambda$\\
+Mobility: $\gamma = \frac{\vec{v}}{\vec{F}_e}=-\frac{\vec{v}}{\vec{F}_{fric}}$\\
+Stokes law: $\vec{F}_f=-6\pi\mu r\vec{v}$\\
+Einstein relation: $j=vn-D\frac{\partial n}{\partial z}$ $\Rightarrow$\\ $D=\gamma kT$\\
+Continuity equation: $\frac{\partial c}{\partial t}=-\vec{\nabla}\vec{j}$\\
+Fick's laws: $\vec{j}=-D\vec{\nabla}c$, $\frac{\partial c}{\partial t} = D\Delta c$\\
+Advection-Diffusion-equation:\\
+$\frac{\partial c}{\partial t}=\left(\frac{\partial c}{\partial t}\right)_{ad}+\left(\frac{\partial c}{\partial t}\right)_{diff}=-\vec{v}\vec{\nabla}c+D\Delta c$\\
+Heat conduction: $j_T = -\kappa\frac{\partial T}{\partial x}$, $\kappa = \frac{\lambda}{c_p\rho}$\\
+Momentum diffusion: $\tau_{xz}=-\nu\frac{\partial}{\partial z}(\rho v_x)$\\
+Diffusion constants:\\
+$D_{air}=10^{-5}$, $D_{water}=10^{-9}$\\
+$\kappa_{air}=10^{-5}$, $\kappa_{water}=10^{-7}$\\
+For $\nu$ see above
+\section*{Geophysical Fluid Dynamics}
+Continuum hypothesis: Internal forces cancel, valid if $\frac{\lambda}{L}\ll 1$\\
+$\tau=\frac{F_S}{A}=-\mu\frac{dv_x}{dy}=-\rho\nu\frac{dv_x}{dy}$\\
+Newtonian Fluid: $\mu=$const.\\
+Eulerian View: $\frac{\partial\psi}{\partial t}$\\
+Lagrangian View: $\frac{d\psi}{dt}=\frac{\partial\psi}{\partial t} + (\vec{v}\vec{\nabla})\psi$\\
+Incompressible fluid: $\frac{d\rho}{dt}=0 \Rightarrow \vec{\nabla}\vec{v}=0$\\
+$\vec{f}=\frac{\vec{F}}{V}=\rho \frac{d\vec{v}}{dt}=\rho\frac{\partial\vec{v}}{\partial t}+\rho(\vec{v}\vec{\nabla})\vec{v}$
+\subsection*{Forces in fluid media}
+$\vec{f}_g=-\rho g \vec{e}_z = -\rho\vec{\nabla}\phi(z,\varphi)$\\
+$\vec{f}_p=-\vec{\nabla}p$\\
+$\vec{a}_f=\frac{1}{\rho}\vec{\nabla}\tau_{ij}=\nu\Delta \vec{v}$\\
+$\tau_{ij}=-\mu\left(\frac{\partial v_i}{\partial x_j}+\frac{\partial v_j}{\partial x_i}\right)$\\
+Earth Coordinate system: z upwards, y to the north, x to the east\\
+$\left(\frac{d}{dt}\right)_{in}=\left(\frac{d}{dt}\right)_{rot}+(\vec{\Omega}\times)$\\
+$\Omega=7,29\cdot10^{-5}Hz$\\
+$\vec{a}_C=-2(\vec{\Omega}\times\vec{v})\approx -f(\vec{e}_z\times\vec{v})$, $f=2\Omega\sin{\varphi}$\\
+Northern Hemisphere: $f>0$, deflection to the right.\\
+Southern Hemisphere: $f<0$, deflection to the left.\\
+\subsection*{Navier Stokes}
+$\frac{d\vec{v}}{dt}=\frac{\partial\vec{v}}{\partial t}+(\vec{v}\vec{\nabla})\vec{v}=-\vec{g}-\frac{1}{\rho}\vec{\nabla}p-f(\vec{e}_z\times\vec{v})+\nu\Delta\vec{v}$\\
+Scale Analysis:\\
+$\frac{\partial\vec{v}}{\partial t},(\vec{v}\vec{\nabla})\vec{v}\propto \frac{U^2}{L}$\\
+$-\frac{1}{\rho}\vec{\nabla}p\propto \frac{\Delta p}{\rho L}$\\
+$f(\vec{e}_z\times\vec{v})\propto fU$\\
+$\nu\Delta\vec{v}\propto \nu\frac{U}{L^2}$\\
+$\text{Rossby} = \frac{\text{advection}}{\text{coriolis}}=\frac{U}{fL}$\\
+$\text{Reynolds}=\frac{\text{advection}}{\text{friction}}=\frac{UL}{\nu}$\\
+$\text{Euler}=\frac{\text{advection}}{\text{pressure}}=\frac{\rho U^2}{\Delta p}$\\
+Horizontal components:
+\subsection*{Initial currents}
+Advection/Total derivative term and Coriolis term remaining\\
+$\frac{d^2u}{dt^2}=-f^2u$ Harmonic oscillation
+\subsection*{Geostrophic balance}
+Pressure gradient and coriolis term remaining\\
+$u=-\frac{1}{f\rho}\frac{\partial p}{\partial y}$\\
+$v=\frac{1}{f\rho}\frac{\partial p}{\partial x}$\\
+Geostrophic flow aligned with Isobars. Force balance between pressure gradient and coriolis.\\
+Northern Hemisphere: Counterclockwise around L (Cyclone), clockwise around H (Anticyclone)\\
+Southern Hemisphere: Clockwise around L, counterclockwise around H\\
+With friction: reduces coriolis force.\\
+Northern Hemisphere: convergence at cyclone, divergence at anticyclone.
+\subsection*{Thermal wind}
+Horizontal temperature difference -> baroclinic\\
+Surface flow from cold to warm, high altitude flow from warm to cold. Ascending at warm side.\\
+With coriolis term:\\
+$\frac{\partial u}{\partial z}=-\frac{g}{fT}\frac{\partial \bar{T}}{\partial y}$\\
+Linear increase in wind velocity with altitude\\
+Vertical component:
+\subsection*{Hydrostatic equilibrium}
+Gravity and Pressure gradient term remaining\\
+$\frac{\partial p}{\partial z}=-\rho g$\\
+Buoyancy:\\
+$F_G=-g\rho_pV_p$, $F_B=g\rho_EV_p$\\
+$F=-g(\rho_p-\rho_E)V_p$\\
+$b\equiv \frac{F}{\rho_p V_p}=-g\frac{\rho_p-\rho_E}{rho_p}=a_z$\\
+Stability of Stratification:\\
+$b\approx\frac{g}{\rho}\left(\frac{\partial\rho}{\partial z}\right)_E \Delta z$\\
+If $\frac{\partial\rho}{\partial z}>0$ unstable\\
+If $\frac{\partial\rho}{\partial z}=0$ neutral\\
+If $\frac{\partial\rho}{\partial z}<0$ stable\\
+$\ddot{\xi}=b=\frac{g}{\rho}\frac{\partial\rho}{\partial z} \xi$\\
+$N^2=-\frac{g}{\rho}\frac{\partial\rho}{\partial z}$\\
+If $\rho$ only depends on $T$: $N^2\propto \frac{dT}{dz}$\\
+$N^2>0$ stable, $N^2<0$ unstable\\
+Adiabatic temperature changes:\\
+$N^2=\frac{g}{T_E}\left(\frac{dT_E}{dz}-\frac{dT_p}{dz}\right)$\\
+Dry adiabatic lapse rate:\\ $\frac{dT_p}{dz}=-\frac{g}{c_p}=-\Gamma_d=-\frac{1K}{100m}$\\
+Moist adiabatic lapse rate: $\Gamma_m=-6,5\frac{K}{km}$\\
+$\Theta=T\left(\frac{p_0}{p}\right)^{\frac{\kappa-1}{\kappa}}$, $\kappa = 7/5$\\
+Temperature that an air parcel reaches if it is adiabatically compressed to $p_0$.\\
+$N^2 = \frac{g}{\Theta}\frac{d\Theta}{dz}$\\
+$\frac{d\Theta}{dz}=\frac{\Theta}{T}\left(\frac{dT}{dz}+\Gamma_d\right)$
+\subsection*{Vorticity}
+$\vec{\zeta}=\vec{\nabla}\times\vec{v}$\\
+Curl in cylindrical coordinates:\\
+$\vec{\nabla}\times\vec{F}=
+\begin{pmatrix}
+\frac{1}{r}\frac{\partial F_z}{\partial \varphi}-\frac{\partial F_\varphi}{\partial z}\\
+\frac{\partial F_r}{\partial z}-\frac{\partial F_z}{\partial r}\\
+\frac{1}{r}\frac{\partial}{\partial r}(rF_\varphi)-\frac{1}{r}\frac{\partial F_r}{\partial \varphi}
+\end{pmatrix}$\\
+$ C = \oint \vec{v}d\vec{l}$, $\frac{dC}{dA_z}=\zeta_z$\\
+Rigid Rotator: $\vec{v}=\omega r\vec{e}_\varphi$\\
+$\zeta_z = 2\omega$\\
+Shear flow:\\
+$\zeta_z = \frac{\partial v}{\partial x}-\frac{\partial u}{\partial y}$\\
+Irrotational flow: $v_\varphi=\frac{\alpha}{r}$\\
+$\zeta_z=0$, Parcel stays orientated in the same direction\\
+Earth: $\zeta_z=2\Omega_z=f$\\
+Circulation theorem: If invicid ($\nu=0$) and barotropic: $\frac{dC}{dt}=0$
+\subsection*{Absolute Vorticity}
+$\eta = \zeta + f$\\
+Vorticity equation:\\
+$\frac{\partial\eta}{\partial t}+\eta(\vec{\nabla}_h\vec{v})+\vec{v}(\vec{\nabla}_h\eta)=(\vec{\nabla}\times\frac{1}{\rho}\vec{f}_{ext})_z$\\
+Potential Vorticity (moving water column):\\
+$\Pi=\frac{\eta}{H}$ is conserved.\\
+$\Rightarrow$ Rossby waves: Changes in $f \rightarrow$ change $\zeta \rightarrow$ higher $f \rightarrow$ again
+\subsection*{Turbulence}
+Reynolds decomposition: $\vec{v}=\bar{\vec{v}}+\vec{v}'$\\
+$\bar{\vec{v}}=\frac{1}{T}\int_0^T\vec{v}dt$\\
+$\varepsilon_{kin}=\frac{1}{2}\rho\bar{v}^2$\\
+$\text{TKE}=\frac{1}{2}\bar{v'^2}$\\
+$\bar{f'}=0$, $\bar{\bar{f}}=0$, $\bar{\bar{f}g'}=0$, $\bar{fg}=\bar{f}\bar{g}+\bar{f'g'}$\\
+Continuity equation: $\vec{\nabla}\bar{\vec{v}}=0$, $\vec{\nabla}\vec{v}'=0$\\
+From Navier Stokes:\\
+$\bar{v_i'v_j'}=-K_{ij}\left(\frac{\partial\bar{v_i}}{\partial x_j}-\frac{\partial\bar{v_j}}{\partial x_i}\right)$\\
+$K_{ij}$ eddy turbulent viscosity\\
+Reynolds stress:\\
+$\tau_{xz,turb}=\rho\bar{v_i'v_j'}=-\rho K_z\frac{\partial\bar{v_x}}{\partial z}$\\
+Frequency spectrum of turbulence:\\
+$F(\nu)=\int_{-\infty}^{\infty}v'(t)e^{-2\pi i\nu t}dt$\\
+$dE = \bar{v'^2}f(\nu)d\nu$\\
+Kolmogorov:\\
+$\varepsilon = -\frac{d\text{TKE}}{dt}$\\
+Scale defined by $\nu [\frac{L^2}{T}]$ and $\varepsilon [\frac{L^2}{T^3}]$\\
+Autocorrelation:\\
+$R_L(\tau)=\frac{\braket{v'(t)v'(t-\tau)}}{\braket{v'^2(t)}}$\\
+$R_E(\tau)=\frac{\bar{v'(t)v'(t-\tau)}}{\bar{v'^2(t)}}$\\
+$R_E(\tau)=\mathcal{F}(f(\nu))$\\
+Turbulent Mixing - Theorem of Taylor:\\
+$\sigma_x^2(t)=2\bar{v_x'^2(t)}\int_0^t\int_0^{t'}R_{L,x}(\tau)d\tau dt'$\\
+For large $\tau$: $\int_0^{t'}R_{L,x}(\tau)d\tau=\tau_L=\text{const.}$\\
+$t\ll\tau_L$: $R_L=1$, $\sigma_x(t)=\sqrt{\bar{v'^2}}t$\\
+$t\gg\tau_L$: $R_L=0$, $\sigma_x(t)=\sqrt{2\bar{v'^2}\tau_L t}$\\
+Molecular vs Turbulent Diffusion:\\
+Molecular: $\sigma^2=\frac{2}{3}v\lambda t$\\
+Turbulent: see above\\
+Mixing Length: $l'=v'\tau_L$\\
+$\sigma^2=2\braket{v'l'}t$\\
+Diffusion Coeff.: $K_x \approx K_y > K_z \gg D$
+\subsection*{Boundary Layers}
