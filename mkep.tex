@@ -4,8 +4,8 @@ $d\lambda B(\lambda,T)=\frac{2hc^2}{\lambda^5}\frac{1}{e^{\frac{hc}{\lambda k T}
 $\lambda_{max}=\frac{2,898\cdot10^{-3}mK}{T}$\\
 $F=\epsilon\sigma T^4$, $\sigma=5,67\cdot10^{-8}\frac{W}{m^2K^4}$\\
 $\alpha + \rho + \tau = 1$, $\alpha = \epsilon$\\
-Albedo of atmosphere + surface: $A = 30\%$\\
-Global radiation balance:\\ 
+Albedo of atmosphere + surface: $A = 30\%$
+\subsection*{Global radiation balance} 
 Without atmosphere: $T = \left(\frac{S_0(1-A)}{4\epsilon\sigma}\right)^{\frac{1}{4}}$\\
 With atmosphere:\\
 $\frac{S_0}{4}(1-A)+\epsilon_a\sigma T_a^4=\sigma T_S^4$\\
@@ -13,6 +13,7 @@ $\epsilon_a\sigma T_S^4=2\epsilon_a\sigma T_a^4$\\
 $T_S = \left(\frac{S_0(1-A)}{2\sigma(2-\epsilon_a)}\right)^{\frac{1}{4}}$\\
 $T_A = \left(\frac{S_0(1-A)}{4\sigma(2-\epsilon_a)}\right)^{\frac{1}{4}}$
 \section*{Earths fluids}
+\subsection*{Atmosphere}
 Equation of state - air:\\
 $pV=nRT$, $\rho = \frac{nM}{V}=\frac{pM}{RT}$\\
 Pressure profile - atmosphere:\\
@@ -28,6 +29,7 @@ $e_S=6,11hPa\cdot10^{\frac{7,5\cdot T[C]}{238 + T[C]}}$\\
 Absolute Humidity: $a=\frac{m_V}{V}$\\
 Specific Humidity: $q=\frac{\rho_V}{\rho_{air}}$\\
 Relative Humidity: $f=\frac{e}{e_S}=\frac{\rho_V R_V T}{e_S}$\\
+\subsection*{Ocean}
 Pressure Profile - Ocean:\\
 $p(z)=p_0-\rho g z$\\
 Salinity: $S=\frac{\text{Mass of Salt}}{\text{Mass of Solution}}$\\
@@ -111,8 +113,8 @@ $\frac{\partial p}{\partial z}=-\rho g$\\
 Buoyancy:\\
 $F_G=-g\rho_pV_p$, $F_B=g\rho_EV_p$\\
 $F=-g(\rho_p-\rho_E)V_p$\\
-$b\equiv \frac{F}{\rho_p V_p}=-g\frac{\rho_p-\rho_E}{rho_p}=a_z$\\
-Stability of Stratification:\\
+$b\equiv \frac{F}{\rho_p V_p}=-g\frac{\rho_p-\rho_E}{\rho_p}=a_z$
+\subsection*{Stability of Stratification}
 $b\approx\frac{g}{\rho}\left(\frac{\partial\rho}{\partial z}\right)_E \Delta z$\\
 If $\frac{\partial\rho}{\partial z}>0$ unstable\\
 If $\frac{\partial\rho}{\partial z}=0$ neutral\\
@@ -188,3 +190,159 @@ Mixing Length: $l'=v'\tau_L$\\
 $\sigma^2=2\braket{v'l'}t$\\
 Diffusion Coeff.: $K_x \approx K_y > K_z \gg D$
 \subsection*{Boundary Layers}
+\textit{Free Atmosphere:} $\tau\approx 0$\\
+\textit{Ekman Layer:} $\frac{\partial u}{\partial z}$ and $\tau$ decreasing with height\\
+$\frac{d \tau}{dz}=f\rho(\vec{v}-\vec{v}_g)\vec{e}_z$\\
+\textit{Prandtl Layer:} Turbulent friction, $\tau\approx\text{const.}$\\
+Increasing eddies, energy cascade\\
+\textit{Molecular viscous layer:} $\tau=-\rho\nu\frac{\partial u}{\partial z}=\text{const.}$\\
+\subsection*{Prandtl Mixing Length approach}
+Mixing length increases linearly with height: $l_z'=\kappa z$, $\kappa=0,41$\\
+$u'=-l_z'\frac{\partial u}{\partial z}$\\
+$|u'|\approx|w'|\approx|l_z'\frac{\partial u}{\partial z}|$\\
+$\tau_{xz}=\rho\bar{u'w'}=\rho\kappa^2 z^2\left(\frac{\partial u}{\partial z}\right)$\\
+$u_*=\sqrt{\frac{|\tau|}{\rho}}$\\
+$\frac{\partial u}{\partial z}=\frac{u_*}{\kappa z}$\\
+Momentum diffusion:\\
+$\tau_{xz}=-K_z\frac{\partial}{\partial z}(\rho u) \Rightarrow K_z=\kappa u_* z$
+\subsection*{Logarithmic wind profile}
+From the differential equation above:\\
+$u(z)=\frac{u_*}{\kappa}\ln{\frac{z}{z_0}}$, $z_0$ surface roughness\\
+$u(z)=u_r\frac{\ln{\left(\frac{z}{z_0}\right)}}{\ln{\left(\frac{z_r}{z_0}\right)}}$\\
+$u_*=u_r\frac{\kappa}{\ln{\left(\frac{z_r}{z_0}\right)}}$\\
+$z_0\approx\frac{\nu}{9u_*}$\\
+$K_z = \kappa u_* z = \frac{u_r\kappa^2 z}{\ln{\left(\frac{z_r}{z_0}\right)}}$\\
+Drag coefficient: $c_D = \left(\frac{u_*}{u_r}\right)^2$\\
+\subsection*{Wind profile in the PBL}
+Free atmosphere: geostrophic\\
+Ekman Layer: ageostrophic, Ekman Spiral\\
+Prandtl Layer: logarithmic
+\subsection*{Wind-driven surface currents}
+Air: $\tau_{xz}(0)=\rho_{air}c_p u_{10}^2$\\
+Water: $\tau_{xz}(z)=\rho_{water}K_z\frac{\partial u}{\partial z}$\\
+$\frac{\partial u}{\partial z}\big|_{z=0}=\frac{\rho_{air}c_p u_{10}^2}{\rho_{water}K_z}$\\
+\subsection*{Equation of motion for surface currents}
+Geostrophic with friction:\\
+$0=-\frac{1}{\rho}\vec{\nabla}_hp-f(\vec{e}_z\times\vec{v}_h)+K_z\frac{\partial^2\vec{v}_h}{\partial z^2}$\\
+Seperate:\\
+Geostrophic: $f(\vec{e}_z\times\vec{v}_g)=-\frac{1}{\rho}\vec{\nabla}_hp$\\
+Ageostrophic: $f(\vec{e}_z\times\vec{v}_{ag})=K_z\frac{\partial^2 \vec{v}_h}{\partial z^2}$\\
+$\frac{\partial^2 v}{\partial z^2}=\frac{f}{K_z}u$\\
+$\frac{\partial^2 u}{\partial z^2}=-\frac{f}{K_z}v$\\
+$u(z)=u_{0}e^{bz}\cos{(bz-\frac{\pi}{4})}$\\
+$v(z)=v_{0}e^{bz}\sin{(bz-\frac{\pi}{4})}$, $b=\sqrt{\frac{f}{2K_z}}$\\
+Current 45 degrees to the right of the wind\\
+Mass transport: To the right of the wind\\
+$\vec{M}_{Ek}=\int_{-\delta}^0\rho v\,dz=\frac{\vec{\tau}_{wind}\times\vec{e}_z}{f}$
+\section*{Global Ocean circulation}
+At surface: turbulent mixing, wind driven turbulence\\
+Below: Thermocline, dominated by density gradients
+\subsection*{Ekman Pumping}
+Northern Hemisphere:\\
+Counter-clockwise around cyclone $\Rightarrow$ Mass transport causes surface divergence and upwelling\\
+Clockwise around anticyclone $\Rightarrow$ Mass transport causes surface convergence and downwelling\\
+$w_{Ek}=\frac{1}{\rho}\vec{e}_z(\vec{\nabla}\times\frac{\vec{\tau}_{wind}}{f})$
+\subsection*{Effect of Ekman pumping on the interior}
+Below Ekman-Layer: geostrophic $u_g$, $v_g$\\
+$\vec{\nabla}_h\vec{v}_g=-\frac{\beta}{f}v_g$\\
+$\beta v_g=f\frac{\partial w}{\partial z}$, $\beta = \frac{\partial f}{\partial y}=\frac{2\Omega\cos{\varphi}}{R}$\\
+$(\beta(90)=0$, $\beta(75)=0,593$, $\beta(60)=1,145$, $\beta(45)=1,619$, $\beta(30)=1,983$, $\beta(0)=2,29)\cdot10^{-11}\frac{1}{ms}$\\
+Southward flow below area of downward Ekman pumping
+\subsection*{Sverdrup Theory}
+$f\frac{\partial w}{\partial z}=\beta v-\frac{1}{\rho}\frac{\partial}{\partial z}\left(\frac{\partial\tau_y}{\partial x}-\frac{\partial\tau_x}{\partial y}\right)$\\
+$\beta V=\frac{1}{\rho}\vec{e}_z(\vec{\nabla}\times\vec{\tau}_{wind})$\\
+$V=\int_{-D}^0 v dz$
+\section*{Global atmosphere circulation}
+\subsection*{Direct thermal circulation}
+Air rises on warm land $\Rightarrow$ low pressure on land, high pressure above\\
+Air sinks on cold ocean $\Rightarrow$ high pressure on ocean, low pressure above\\
+\subsection*{Thermal geostrophic wind}
+With coriolis $\Rightarrow$ westerly wind\\
+$v_x(z)=v_x(0)-\frac{g}{f\bar{T}}\frac{\partial \bar{T}}{\partial y}z$\\
+Increasing wind speed with altitude due to increasing pressure difference
+\subsection*{The Hadley cell}
+From equator to 25 degrees: Hot and wet air rises at the equator, goes north, dry air sinks at 25 degrees. $\Rightarrow$ Intertropical Convergence Zone
+\subsection*{Extratropical Circulation}
+Three convection cells between equator and pole\\
+North-/Southeast Trades, above Westerlies, above Polar easterlies
+\subsection*{Rossby Waves}
+$\frac{d\eta}{dt}=0\Rightarrow\frac{d\zeta}{dt}=-\beta v$\\
+Initial pertubation leads to an oscillation in y-Direction\\
+$k\omega-uk^2=-\beta$, $c=u-\frac{\beta \lambda^2}{4\pi^2}$\\
+For stationary $c=0$: $\lambda\approx 5900km$
+\section*{Groundwater and Soil physics}
+Porosity: $\phi=\frac{V_{pores}}{V}$\\
+Water content: $\theta = \frac{V_{water}}{V}$\\
+Water flow in pores: Gravity, Pressure gradient remaining in vertical, pressure gradient and friction in horizontal\\
+$=0-g-\frac{1}{\rho}\frac{\partial p}{\partial z} \Rightarrow p_{hyd}=p_0-\rho g z$\\
+$p_d = p-p_{hyd}$\\
+Hydraulic head: $h=\frac{p_d}{\rho g}=\frac{p}{\rho g}-z$\\
+Horizontal: $\vec{\nabla}p-\rho\vec{g}=\mu\Delta\vec{v}$\\
+Energy at point z: $E=pV+mgz$, $E=hmg$
+\subsection*{Aquifer types}
+Unconfined aquifer: $h=$ height of groundwater level\\
+Confinded aquifer: $h>$ height of groundwater level
+\subsection*{Darcy's law}
+Filtergeschwindigkeit: $q=\frac{Q}{A}=-K\frac{\Delta h}{\Delta l}$
+\subsection*{Laminar flow through a horizontal tube}
+$\frac{1}{\rho}\frac{\partial p}{\partial x}=2\nu\frac{\partial^2 u}{\partial r^2}$\\
+$u(r)=-\frac{1}{4\mu}\frac{\partial p}{\partial x}(R^2-r^2)$
+\subsection*{Hagen-Poiseuille Law}
+Integration over cross-section:\\
+$Q=-\frac{\pi R^4}{8\mu}\frac{\partial p}{\partial x}$\\
+Bundle of capillaries: $\phi = \frac{N\pi R^2}{A_{tot}}$\\
+$q=\frac{Q}{A_{tot}}=-\frac{\phi R^2g}{8\nu}\frac{\partial h}{\partial x}$\\
+Darcy: $K=\frac{\phi R^2 g}{8\nu}$
+\subsection*{Flow equation for Groundwater}
+$\vec{\nabla}\vec{q}=-S_s\frac{\partial h}{\partial t}-J_W$\\
+$S_S=-\frac{1}{V_{tot}}\frac{\partial V_W}{\partial h}$\\
+Special case: $K$ const, no $J_W$:\\
+$\frac{\partial h}{\partial t}=\alpha \Delta h$ Diffusion for hydraulic head
+\section*{Cryosphere}
+Glaciers: flow driven by slope of plane\\
+Ice sheets: flow driven by slope of ice surface\\
+Stress-Strain: $\varepsilon=\lim_{l\rightarrow0}\frac{\Delta l}{l}$\\
+$\Delta l=l_x\frac{\partial u}{\partial x}dt$\\
+$\dot{\varepsilon}_{xy}=\frac{1}{2}\left(\frac{\partial u}{\partial y}+\frac{\partial v}{\partial x}\right)$\\
+\textit{Solids:} $\sigma = E\varepsilon$, $\dot{\varepsilon}=0$\\
+\textit{Fluids:} $\tau_{ij}=-2\mu\dot{\varepsilon}_{ij}$\\
+\textit{Ice:} $\dot{\varepsilon}_{ij}=A|\tau_{eff}^{n-1}|\tau_{ij}$, $\mu^*=\frac{1}{A|\tau_{eff}^{n-1}|}$, $n\approx 3$\\
+\subsection*{Shear stress and shape of glaciers}
+$\tau < \tau_0$ yield stress\\
+$h\approx \frac{\tau_0}{\rho g}\frac{1}{\sin{\alpha}}$, $\tau_0=1$, $\frac{\tau_0}{\rho g}\approx 11m$\\
+$H^2=\frac{\tau_0}{\rho g}2L$, $V\propto H^5 = L^2 H$
+\subsection*{Kinematic ice sheet flow model}
+$\frac{\partial H}{\partial t}=-\frac{\partial}{\partial x}(v_x H)+A$\\
+At $x=0$, stationary, continuity:\\
+$v_z(z)=A(1-\frac{z}{H})$\\
+$t(z)=-\frac{H}{A}\ln{(1-\frac{z}{H})}$
+\section*{Isotopes}
+$A$ Massenzahl, $Z$ Kernladungszahl, $N$ Neutronenzahl\\
+Alpha decay: $\ce{_Z^AX_N}\rightarrow \ce{_{Z-2}^{A-4}Y_{N-2}}+\alpha$\\
+Beta Minus decay:\\
+$\ce{_{Z}^AX_N}\rightarrow\ce{_{Z+1}^AY_{N-1}}+\bar{\nu}_e+e^-$\\
+Radioisotopes:\\
+-Primordial (solar system)\\
+-Radiogenic (from decay)\\
+-Cosmogenic (cosmic rays)\\
+-Anthropogenic (technical processes)\\
+Radioactive decay: $N(t)=N_0e^{-\lambda t}$
+\subsection*{Stable Isotopes}
+$R=\frac{\text{rare}}{\text{common}}$\\
+$\delta = \frac{R_{sample}}{R_{standard}}-1$\\
+Fractionation:\\
+$\alpha_{B/A}=\frac{R_B}{R_A}$, $\varepsilon=\alpha -1$\\
+$\varepsilon>0$: Enrichment of rare, $\varepsilon<0$: Depletion of rare\\
+$\delta_B\approx\delta_A+\varepsilon_{B/A}$ for $A\rightarrow B$\\
+$R$ and $\alpha$ multiplicative, $\delta$ and $\varepsilon$ approx. additive\\
+$R_A=R_{st}(1+\delta_A)$\\
+$\alpha_{B/A}=\frac{1+\delta_B}{1+\delta_A}\approx 1+\delta_B-\delta_A$\\
+$\varepsilon_{B/A}\approx \delta_B-\delta-A$\\
+$\varepsilon_{B/A}\approx -\varepsilon_{A/B}$\\
+Rule of thumb: $\ce{^2H}/\ce{^1H}$: $\frac{\Delta m}{m_l}=1$\\
+$\ce{^{18}O}/\ce{^{16}O}$: $\frac{\Delta m}{m_l}=\frac{2}{16}=1/8$\\
+$\varepsilon(\ce{^2H})\approx 8\varepsilon(\ce{^{18}O})$\\
+Fractionation decreases with increasing temperature\\
+Heavy isotopes are generally enriched in the denser phase
+\subsection*{The Rayleigh process}
+$\frac{R}{R_0}=\left(\frac{N}{N_0}\right)^{\alpha-1}\equiv f^{\alpha-1}$
